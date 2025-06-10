@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dicoding Story App - Share your stories">
+    <meta name="theme-color" content="#6200ea">
+    <title>Dicoding Story App</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="public/images/icons/icon-192x192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+  <body>
+    <div class="app-loader">
+        <p>Memuat aplikasi...</p>
+        </div>
+
+    <a href="#main-content" class="skip-link">Skip to content</a>
+    <button class="install-btn" id="install-btn">Install App</button>
+    
+    <header>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">Dicoding Story</a>
+
+        <nav id="navigation-drawer" class="navigation-drawer" aria-label="Main navigation">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/" aria-current="page">Home</a></li>
+            <li><a href="#/bookmarks">Bookmarks</a></li>
+            <li><a href="#/about">About</a></li>
+          </ul>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button" aria-label="Toggle navigation">☰</button>
+      </div>
+    </header>
+
+    <div class="notification-container">
+        <button id="notification-toggle" class="notification-toggle" role="switch" aria-checked="false">Enable Notifications</button>
+    </div>
+
+    <main id="main-content" class="main-content">
+      </main>
+    
+    <div id="toast" class="toast"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="index.js"></script> 
+  </body>
+</html>
